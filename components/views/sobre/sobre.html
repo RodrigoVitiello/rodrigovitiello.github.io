@@ -1,0 +1,17 @@
+<main class='md-padding' layout="column">
+    <div flex>
+        <md-card ng-repeat="item in vm.data">
+            <div layout="row" flex>
+                <div ng-if="item.icon" class="main-card-icon">
+                    <i class="fa fa-4x fa-{{ item.icon }}"></i>
+                </div>
+                <div flex>
+                    <h2>{{ item.title }}</h2>
+                    <p>
+                        {{ item.description }}
+                    </p>
+                </div>
+            </div>
+        </md-card>
+    </div>
+</main>

@@ -1,0 +1,13 @@
+<header ng-controller="AppNavbarController as vm">
+    <md-content class="md-padding" layout="row" layout-align="center center">
+        <md-nav-bar md-selected-nav-item="vm.currentNavItem" nav-bar-aria-label="navigation links">
+            <md-nav-item
+            ng-repeat="route in vm.routes"
+            md-nav-click="vm.go(route)" name="{{ route.name }}">
+            <span ng-bind="route.desc"></span>
+        </md-nav-bar>
+    </md-content>
+    <div class="md-display-2 text-center">
+        <h1>Rodrigo Vitiello</h1>
+    </div>
+</header>
